@@ -10,7 +10,6 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);font-size:16px;line-height:1.7;overflow-x:hidden;}
-
 nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 4rem;background:rgba(247,244,239,0.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
 .nav-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;letter-spacing:.02em;text-decoration:none;color:var(--ink);}
 .nav-links{display:flex;gap:2rem;list-style:none;}
@@ -18,7 +17,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .nav-links a:hover{color:var(--accent);}
 .nav-cta{padding:.45rem 1.2rem;background:var(--ink)!important;color:var(--paper)!important;border-radius:2rem;font-size:.75rem!important;}
 .nav-cta:hover{background:var(--accent)!important;color:var(--paper)!important;}
-
 .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding-top:72px;}
 .hero-left{display:flex;flex-direction:column;justify-content:center;padding:5rem 4rem 5rem 6rem;position:relative;}
 .hero-left::after{content:'';position:absolute;right:0;top:15%;bottom:15%;width:1px;background:var(--border);}
@@ -34,27 +32,23 @@ h1 em{font-style:italic;color:var(--accent);}
 .btn-primary:hover{background:var(--accent);transform:translateY(-2px);}
 .btn-secondary{padding:.8rem 2rem;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-size:.82rem;letter-spacing:.07em;text-transform:uppercase;font-weight:500;transition:all .2s;display:inline-block;border-radius:2px;}
 .btn-secondary:hover{background:var(--ink);color:var(--paper);}
-
 .hero-right{display:flex;align-items:center;justify-content:center;padding:4rem;background:var(--warm);position:relative;overflow:hidden;}
 .hero-right::before{content:'K';position:absolute;font-family:'Cormorant Garamond',serif;font-size:40vw;font-weight:300;color:rgba(181,101,29,.05);right:-8vw;top:50%;transform:translateY(-50%);line-height:1;pointer-events:none;}
 .photo-wrapper{position:relative;z-index:1;width:min(300px,68%);}
 .photo-wrapper img{width:100%;border-radius:50%;display:block;box-shadow:0 24px 60px rgba(0,0,0,.13);}
 .photo-badge{position:absolute;bottom:1.5rem;right:-1.5rem;background:var(--ink);color:var(--paper);padding:.75rem 1.25rem;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.18);}
 .photo-badge strong{display:block;font-size:1.3rem;letter-spacing:0;font-family:'Cormorant Garamond',serif;}
-
 .stats-bar{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
 .stat{padding:2.25rem 2rem;border-right:1px solid var(--border);text-align:center;}
 .stat:last-child{border-right:none;}
 .stat-number{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;line-height:1;color:var(--accent);}
 .stat-label{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-top:.4rem;font-weight:500;}
-
 section{padding:6rem 0;}
 .container{max-width:1100px;margin:0 auto;padding:0 4rem;}
 .section-label{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:.6rem;display:flex;align-items:center;gap:.75rem;}
 .section-label::before{content:'';display:inline-block;width:2rem;height:1px;background:var(--accent);}
 h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;line-height:1.15;margin-bottom:2.5rem;}
 h2 em{font-style:italic;color:var(--accent);}
-
 .about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:start;}
 .about-text p{color:var(--muted);margin-bottom:1.2rem;font-size:1.02rem;}
 .about-text p strong{color:var(--ink);font-weight:500;}
@@ -62,8 +56,6 @@ h2 em{font-style:italic;color:var(--accent);}
 .detail-row:first-child{border-top:1px solid var(--border);}
 .detail-key{color:var(--muted);font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;font-weight:500;}
 .detail-val{color:var(--ink);text-align:right;max-width:55%;}
-
-/* VIDEOS */
 .videos-bg{background:var(--ink);color:var(--paper);}
 .videos-bg .section-label{color:var(--accent-light);}
 .videos-bg .section-label::before{background:var(--accent-light);}
@@ -71,29 +63,13 @@ h2 em{font-style:italic;color:var(--accent);}
 .videos-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;}
 .video-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:4px;overflow:hidden;transition:border-color .25s,transform .25s;}
 .video-card:hover{border-color:rgba(181,101,29,.55);transform:translateY(-3px);}
-.video-thumb{aspect-ratio:16/9;background:rgba(255,255,255,.04);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
-.vt-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
-.vt-letter{font-family:'Cormorant Garamond',serif;font-size:9rem;font-weight:300;color:rgba(181,101,29,.12);line-height:1;}
-.play-btn{width:58px;height:58px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;transition:transform .2s,background .2s;cursor:pointer;border:none;}
-.video-card:hover .play-btn{transform:scale(1.08);background:var(--accent-mid);}
-.play-icon{width:0;height:0;border-style:solid;border-width:9px 0 9px 17px;border-color:transparent transparent transparent #fff;margin-left:4px;}
 .video-info{padding:1.5rem;}
 .video-num{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(247,244,239,.35);margin-bottom:.35rem;}
 .video-title{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:400;color:var(--paper);margin-bottom:.45rem;}
 .video-desc{font-size:.83rem;color:rgba(247,244,239,.5);line-height:1.75;margin-bottom:1.1rem;}
 .video-dur{display:inline-block;padding:.22rem .7rem;border:1px solid rgba(255,255,255,.14);border-radius:2rem;font-size:.68rem;letter-spacing:.06em;color:rgba(247,244,239,.45);}
-.loom-area{display:flex;align-items:center;gap:.65rem;margin-top:1rem;}
-.loom-lbl{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(247,244,239,.3);white-space:nowrap;}
-.loom-field{flex:1;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:2px;padding:.45rem .8rem;color:var(--paper);font-size:.8rem;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s;}
-.loom-field:focus{border-color:var(--accent-mid);}
-.loom-field::placeholder{color:rgba(247,244,239,.22);}
-.loom-save{padding:.45rem .95rem;background:var(--accent);border:none;color:#fff;font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;font-weight:500;cursor:pointer;border-radius:2px;transition:background .2s;white-space:nowrap;}
-.loom-save:hover{background:var(--accent-mid);}
 .video-embed{display:none;}
 .video-embed iframe{width:100%;aspect-ratio:16/9;display:block;border:none;}
-.loom-note{font-size:.72rem;color:rgba(247,244,239,.28);margin-top:.5rem;font-style:italic;}
-
-/* CASE STUDY */
 .cs-bg{background:var(--warm);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
 .cs-tab-row{display:flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-bottom:2.5rem;width:fit-content;}
 .cs-tab{padding:.6rem 1.4rem;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;font-weight:500;color:var(--muted);background:transparent;border:none;border-right:1px solid var(--border);cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif;}
@@ -102,7 +78,6 @@ h2 em{font-style:italic;color:var(--accent);}
 .cs-tab:hover:not(.active){background:var(--accent-light);}
 .cs-pane{display:none;}
 .cs-pane.active{display:block;}
-
 .plat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem;}
 .plat-card{background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:1.5rem;}
 .plat-card.featured{border:2px solid var(--teal);}
@@ -130,7 +105,6 @@ h2 em{font-style:italic;color:var(--accent);}
 .mfb{background:var(--blue-light);}
 .mbt{margin-top:.3rem;padding:3px 9px;background:var(--teal);color:#fff;font-size:.62rem;border:none;border-radius:2px;}
 .mbb{margin-top:.3rem;padding:3px 9px;background:var(--blue);color:#fff;font-size:.62rem;border:none;border-radius:2px;}
-
 .phase-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-bottom:2rem;}
 .ph{padding:1.4rem;border-right:1px solid var(--border);}
 .ph:last-child{border-right:none;}
@@ -139,29 +113,24 @@ h2 em{font-style:italic;color:var(--accent);}
 .phul{list-style:none;}
 .phul li{font-size:.78rem;color:var(--muted);padding:.18rem 0;line-height:1.5;display:flex;gap:.4rem;}
 .phul li::before{content:'—';color:var(--accent);flex-shrink:0;}
-
 .int-row{display:flex;flex-wrap:wrap;gap:.55rem;margin-bottom:1.4rem;}
 .int-pill{display:flex;align-items:center;gap:.45rem;padding:.38rem .95rem;border:1px solid var(--border);border-radius:2rem;font-size:.78rem;color:var(--muted);background:var(--paper);}
 .idot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
-
 .ins-row{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
 .ins{padding:1.2rem;border:1px solid var(--border);border-left:3px solid;border-top-left-radius:0;border-bottom-left-radius:0;}
 .ins.tl{border-left-color:var(--teal);}
 .ins.bl{border-left-color:var(--blue);}
 .ins-pl{font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.45rem;}
 .ins-tx{font-size:.83rem;color:var(--ink);line-height:1.7;}
-
 .out-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
 .out-item{padding:1.05rem;background:var(--paper);border:1px solid var(--border);display:flex;gap:.7rem;align-items:flex-start;}
 .out-chk{width:21px;height:21px;min-width:21px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:.1rem;color:#fff;font-size:.6rem;font-weight:700;}
 .out-tx{font-size:.81rem;color:var(--muted);line-height:1.6;}
-
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;}
 .skill-group h3{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:1rem;padding-bottom:.6rem;border-bottom:1px solid var(--border);}
 .skill-list{list-style:none;}
 .skill-list li{font-size:.86rem;color:var(--muted);padding:.32rem 0;border-bottom:1px solid rgba(0,0,0,.04);display:flex;align-items:center;gap:.55rem;}
 .skill-list li::before{content:'';width:4px;height:4px;min-width:4px;border-radius:50%;background:var(--accent);}
-
 .exp-item{display:grid;grid-template-columns:190px 1fr;gap:3rem;padding:2.5rem 0;border-bottom:1px solid var(--border);}
 .exp-item:first-child{border-top:1px solid var(--border);}
 .exp-date{font-size:.79rem;color:var(--muted);font-weight:500;}
@@ -170,7 +139,6 @@ h2 em{font-style:italic;color:var(--accent);}
 .exp-content p{font-size:.87rem;color:var(--muted);line-height:1.8;}
 .exp-tags{display:flex;flex-wrap:wrap;gap:.38rem;margin-top:.8rem;}
 .exp-tag{padding:.18rem .68rem;border:1px solid var(--border);font-size:.68rem;color:var(--muted);border-radius:2rem;}
-
 .contact-bg{background:var(--ink);color:var(--paper);}
 .contact-bg .section-label{color:var(--accent-light);}
 .contact-bg .section-label::before{background:var(--accent-light);}
@@ -186,14 +154,11 @@ h2 em{font-style:italic;color:var(--accent);}
 .clink-val{font-size:.9rem;}
 .clink-arr{opacity:.33;transition:opacity .2s,transform .2s;}
 .clink:hover .clink-arr{opacity:1;transform:translateX(4px);}
-
 footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.07);padding:1.75rem 4rem;display:flex;justify-content:space-between;align-items:center;}
 footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
-
 .fade-up{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
 .fade-up.visible{opacity:1;transform:translateY(0);}
 @keyframes kushmi-ticker{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
-
 @media(max-width:900px){
   nav{padding:1rem 1.5rem;}
   .nav-links{display:none;}
@@ -240,7 +205,6 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
     <span style="display:flex;align-items:center;gap:.5rem;font-size:.68rem;color:rgba(247,244,239,.45);letter-spacing:.09em;text-transform:uppercase;font-weight:500;flex-shrink:0;"><span style="width:5px;height:5px;border-radius:50%;background:var(--blue);display:inline-block;flex-shrink:0;"></span>MSc Data Science <span style="color:rgba(247,244,239,.85);font-weight:500;">Dalarna 2026</span></span>
     <span style="display:flex;align-items:center;gap:.5rem;font-size:.68rem;color:rgba(247,244,239,.45);letter-spacing:.09em;text-transform:uppercase;font-weight:500;flex-shrink:0;"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal);display:inline-block;flex-shrink:0;"></span>Jira · Notion · Xero <span style="color:rgba(247,244,239,.85);font-weight:500;">proficient</span></span>
     <span style="display:flex;align-items:center;gap:.5rem;font-size:.68rem;color:rgba(247,244,239,.45);letter-spacing:.09em;text-transform:uppercase;font-weight:500;flex-shrink:0;"><span style="width:5px;height:5px;border-radius:50%;background:var(--accent);display:inline-block;flex-shrink:0;"></span>B2B SaaS · Fintech · ERP <span style="color:rgba(247,244,239,.85);font-weight:500;">specialist</span></span>
-    <!-- duplicate for seamless loop -->
     <span style="display:flex;align-items:center;gap:.5rem;font-size:.68rem;color:rgba(247,244,239,.45);letter-spacing:.09em;text-transform:uppercase;font-weight:500;flex-shrink:0;"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal);display:inline-block;flex-shrink:0;"></span>Cin7 Core <span style="color:rgba(247,244,239,.85);font-weight:500;">50+ implementations</span></span>
     <span style="display:flex;align-items:center;gap:.5rem;font-size:.68rem;color:rgba(247,244,239,.45);letter-spacing:.09em;text-transform:uppercase;font-weight:500;flex-shrink:0;"><span style="width:5px;height:5px;border-radius:50%;background:var(--accent);display:inline-block;flex-shrink:0;"></span>Shopify &amp; Stripe <span style="color:rgba(247,244,239,.85);font-weight:500;">payment integrations</span></span>
     <span style="display:flex;align-items:center;gap:.5rem;font-size:.68rem;color:rgba(247,244,239,.45);letter-spacing:.09em;text-transform:uppercase;font-weight:500;flex-shrink:0;"><span style="width:5px;height:5px;border-radius:50%;background:var(--blue);display:inline-block;flex-shrink:0;"></span>EU · US · APAC <span style="color:rgba(247,244,239,.85);font-weight:500;">3 regions</span></span>
@@ -278,7 +242,7 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
 </section>
 
 <div class="stats-bar">
-  <div class="stat fade-up"><div class="stat-number">7+</div><div class="stat-label">Years experience</div></div>
+  <div class="stat fade-up"><div class="stat-number">5+</div><div class="stat-label">Years experience</div></div>
   <div class="stat fade-up"><div class="stat-number">50+</div><div class="stat-label">Customers onboarded</div></div>
   <div class="stat fade-up"><div class="stat-number">3</div><div class="stat-label">Regions: EU · US · APAC</div></div>
   <div class="stat fade-up"><div class="stat-number">2</div><div class="stat-label">Master's degrees</div></div>
@@ -309,16 +273,12 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
   </div>
 </section>
 
-<!-- ══════════════════════ VIDEOS ══════════════════════ -->
 <section id="videos" class="videos-bg">
   <div class="container">
     <div class="section-label">Watch me work</div>
     <h2>See who I <em>am</em></h2>
     <p style="color:rgba(247,244,239,.52);font-size:.93rem;margin-bottom:2.5rem;max-width:52ch;line-height:1.85;">Two short videos that show what I'm like before the interview. Real delivery. Real communication. Real me.</p>
-
     <div class="videos-grid">
-
-      <!-- VIDEO 1 — Meet Me -->
       <div class="video-card">
         <div class="video-embed" style="display:block;">
           <iframe src="https://drive.google.com/file/d/1gkLlHhbUbDVorbcS4Ka2ZgPAFHtVl5CW/preview" width="100%" style="aspect-ratio:16/9;display:block;border:none;" allow="autoplay" allowfullscreen></iframe>
@@ -330,8 +290,6 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
           <span class="video-dur">90 seconds · Introduction</span>
         </div>
       </div>
-
-      <!-- VIDEO 3 — Go-Live Story -->
       <div class="video-card">
         <div class="video-embed" style="display:block;">
           <iframe src="https://drive.google.com/file/d/1qg4PR6P71usQ7nmzDy6Wd1Ou6bVR-yXF/preview" width="100%" style="aspect-ratio:16/9;display:block;border:none;" allow="autoplay" allowfullscreen></iframe>
@@ -343,18 +301,15 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
           <span class="video-dur">3–4 minutes · Storytelling</span>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════ CASE STUDY ══════════════════════ -->
 <section id="case-study" class="cs-bg">
   <div class="container">
     <div class="section-label">Interactive case studies</div>
     <h2>Real implementations. <em>Real results.</em></h2>
     <p style="color:var(--muted);font-size:.92rem;margin-bottom:2rem;max-width:54ch;line-height:1.85;">Click through the tabs to explore how I work across different platforms and scenarios — from discovery to go-live.</p>
-
     <div class="cs-tab-row">
       <button class="cs-tab active" onclick="csTab('ov',this)">Cin7 vs Odoo</button>
       <button class="cs-tab" onclick="csTab('stripe',this)">Stripe &amp; Shopify</button>
@@ -362,7 +317,6 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
       <button class="cs-tab" onclick="csTab('in',this)">Integrations</button>
       <button class="cs-tab" onclick="csTab('ou',this)">Outcomes</button>
     </div>
-
     <div class="cs-pane active" id="cs-ov">
       <div class="plat-grid">
         <div class="plat-card featured">
@@ -409,8 +363,6 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
         <div class="ins bl"><div class="ins-pl">Odoo — key insight</div><div class="ins-tx">Odoo's power is also its risk: too many modules activated too early overwhelms users. I always start with core workflows only, then layer complexity once the team is confident.</div></div>
       </div>
     </div>
-
-    <!-- STRIPE & SHOPIFY -->
     <div class="cs-pane" id="cs-stripe">
       <div style="background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:2rem;margin-bottom:2rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;">
         <div>
@@ -430,7 +382,7 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem;">
         <div class="ins bl"><div class="ins-pl">Payment sync timing</div><div class="ins-tx">Stripe settlements arrive in batches and don't match individual Shopify orders one-to-one. I configured reconciliation to match settlement reports against order totals — eliminating false mismatches in Xero.</div></div>
-        <div class="ins tl"><div class="ins-pl">Refund & chargeback flows</div><div class="ins-tx">Refunds in Shopify, reversals in Stripe, credit notes in Xero — all mapped to move in sync so no manual journal entry was required post-refund.</div></div>
+        <div class="ins tl"><div class="ins-pl">Refund &amp; chargeback flows</div><div class="ins-tx">Refunds in Shopify, reversals in Stripe, credit notes in Xero — all mapped to move in sync so no manual journal entry was required post-refund.</div></div>
         <div class="ins bl"><div class="ins-pl">Multi-currency reconciliation</div><div class="ins-tx">Customers selling internationally faced FX gaps between Stripe settlement and Xero reporting. I configured exchange rate handling and rounding rules to keep books clean across USD, EUR and GBP.</div></div>
         <div class="ins tl"><div class="ins-pl">Go-live payment continuity</div><div class="ins-tx">Built a cutover checklist covering active subscriptions, pending payouts, and webhook re-registration. Zero payment downtime during processor switch — orders kept flowing throughout.</div></div>
       </div>
@@ -439,7 +391,6 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
         <div class="ins bl"><div class="ins-pl">What I carry forward</div><div class="ins-tx">Payment integrations fail silently more than any other type. The webhook event log is your best friend. I stay available for the full first week post-launch — not just go-live day.</div></div>
       </div>
     </div>
-
     <div class="cs-pane" id="cs-ph">
       <div class="phase-grid">
         <div class="ph"><div class="phn">Phase 01</div><div class="phnm">Discovery</div><ul class="phul"><li>Requirements sessions</li><li>Current-state workflow mapping</li><li>Integration dependency review</li><li>Written customer sign-off</li></ul></div>
@@ -452,7 +403,6 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
         <div class="ins bl"><div class="ins-pl">Odoo process note</div><div class="ins-tx">Phase 1 is longest. Odoo's flexibility means requirements must be extremely detailed upfront. A vague requirement in discovery becomes an expensive reconfiguration mid-project.</div></div>
       </div>
     </div>
-
     <div class="cs-pane" id="cs-in">
       <p style="font-size:.86rem;color:var(--muted);margin-bottom:1.2rem;line-height:1.7;">Every integration I've configured, tested and troubleshot across both platforms — each with its own sync logic, edge cases and failure patterns.</p>
       <div class="int-row">
@@ -476,7 +426,6 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
         <div class="ins bl"><div class="ins-pl">Most common issue — Xero</div><div class="ins-tx">Tax code mapping mismatches causing reconciliation failures. Fix: map every tax code in a test run and reconcile dummy transactions before go-live.</div></div>
       </div>
     </div>
-
     <div class="cs-pane" id="cs-ou">
       <div class="out-grid">
         <div class="out-item"><div class="out-chk">✓</div><div class="out-tx">50+ customers live across EU, US and APAC over 3.5 years</div></div>
@@ -499,7 +448,7 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
     <h2>Tools, platforms <em>&</em> skills</h2>
     <div class="skills-grid" style="grid-template-columns:repeat(2,1fr);gap:2rem 3rem;">
       <div class="skill-group fade-up">
-        <h3>Implementation & delivery</h3>
+        <h3>Implementation &amp; delivery</h3>
         <ul class="skill-list">
           <li>Customer onboarding &amp; go-live support</li>
           <li>Requirements workshops &amp; sign-off</li>
@@ -510,7 +459,7 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
         </ul>
       </div>
       <div class="skill-group fade-up">
-        <h3>SaaS & fintech platforms</h3>
+        <h3>SaaS &amp; fintech platforms</h3>
         <ul class="skill-list">
           <li>Cin7 Core · Odoo · SAP · NetSuite</li>
           <li>Shopify · Amazon Seller Central</li>
@@ -521,7 +470,7 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
         </ul>
       </div>
       <div class="skill-group fade-up">
-        <h3>Data & reporting</h3>
+        <h3>Data &amp; reporting</h3>
         <ul class="skill-list">
           <li>SQL · Python</li>
           <li>Power BI dashboards &amp; KPI reporting</li>
@@ -532,7 +481,7 @@ footer p{font-size:.74rem;color:rgba(247,244,239,.24);}
         </ul>
       </div>
       <div class="skill-group fade-up">
-        <h3>AI & automation</h3>
+        <h3>AI &amp; automation</h3>
         <ul class="skill-list">
           <li>Generative AI workflow automation (certified)</li>
           <li>AI-assisted documentation &amp; knowledge management</li>
@@ -616,35 +565,11 @@ const obs = new IntersectionObserver(entries=>{
   entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('visible'),i*80);});
 },{threshold:0.1});
 document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
-
 function csTab(id,btn){
   document.querySelectorAll('.cs-pane').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.cs-tab').forEach(b=>b.classList.remove('active'));
   document.getElementById('cs-'+id).classList.add('active');
   btn.classList.add('active');
-}
-
-function saveLoom(num){
-  const url=document.getElementById('lu-'+num).value.trim();
-  if(!url){alert('Please paste your Loom share link first.');return;}
-  const embedUrl=url.replace('loom.com/share','loom.com/embed').split('?')[0];
-  if(!embedUrl.includes('loom.com/embed')){alert('Please paste a valid Loom share link (loom.com/share/...)');return;}
-  const emb=document.getElementById('vembed-'+num);
-  emb.innerHTML='<iframe src="'+embedUrl+'" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
-  emb.style.display='block';
-  document.getElementById('vthumb-'+num).style.display='none';
-  document.getElementById('la-'+num).style.display='none';
-  document.getElementById('ln-'+num).style.display='none';
-}
-
-function playVideo(num){
-  const url=document.getElementById('lu-'+num).value.trim();
-  if(url){saveLoom(num);}
-  else{
-    const area=document.getElementById('la-'+num);
-    area.style.display='flex';
-    document.getElementById('lu-'+num).focus();
-  }
 }
 </script>
 </body>
